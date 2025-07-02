@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+
+</head>
+<body>
+    <aside>
+        <h3>Pet <br> Health <br> Tracker</h3>
+        <nav>
+            <ul class="even-column">
+              <a href="profile.php">
+                  <li data-type="profile">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+                      </svg>
+                  </li>
+              </a>
+              <a href="tracking.html">
+                  <li data-type="trackings">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path d="M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z"/>
+                      </svg>
+                  </li>
+              </a>
+                <a href="about.php">
+                    <li data-type="about Us">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/>
+                        </svg>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </aside>
+    <section class="content">
+        <h1 class="head-txt">Trackings</h1>
+        <div class="head-back"><span class="head-front"></span></div>
+        <div class="component">
+            <div class="box general-info">
+                <h2>SURVEY</h2>
+    <form id="healthSurveyForm" class="surveyForm">
+    <div class="form-group">
+        <label for="pet">Select what type of pet</label>
+        <select id="pet" name="pet">
+          <option value="">Select</option>
+          <option value="cat">Cat</option>
+          <option value="dog">Dog</option>
+        </select>
+      </div>
+
+    <div class="form-group">
+      <label for="symptoms">Select symptoms for dog</label>
+      <select id="symptoms" name="symptoms">
+        <option value="">Select</option>
+        <option value="Lack of energy/lethargic">Lack of energy/lethargic</option>
+        <option value="Not eating enough foods">Not eating enough foods</option>
+        <option value="Fever">fever</option>
+        <option value="Abdominal pain">Abdominal pain</option>
+        <option value="Vomiting">Vomiting</option>
+        <option value="Diarrhea">Diarrhea</option>
+        <option value="High heart rate">High heart rate</option>
+        <option value="Difficulty in breathing">Difficulty in breathing</option>
+        <option value="Shivering">Shivering</option>
+        <option value="Muscle stiffness">Muscle stiffness</option>
+        <option value="Difficulty walking">Difficulty walking</option>
+        <option value="Pale gums">Pale gums</option>
+        <option value="Cool body surface">Cool body surface</option>
+        <option value="Have fixed and dilated pupils">Have fixed and dilated pupils</option>
+        <option value="Clear nasal discharge">Clear nasal discharge</option>
+        <option value="Coughing">Coughing</option>
+        <option value="Head tilt">Head tilt</option>
+        <option value="Circling">Circling</option>
+        <option value="Seizures">Seizures</option>
+        <option value="Loss of appetite">Loss of appetite</option>
+        <option value="Stiffness">Stiffness</option>
+        <option value="discharge form nose and eyes">discharge form nose and eyes</option>
+        <option value="sneezing">sneezing</option>
+        <option value="runny nose">runny nose</option>
+        <option value="unusual drooling">unusual drooling</option>
+        <option value="difficulty breathing">difficulty breathing</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="symptoms">Select symptoms for cat</label>
+      <select id="symptoms" name="symptoms">
+        <option value="">Select</option>
+        <option value="Bloody diarrhea">Bloody diarrhea</option>
+        <option value="Weakness">Weakness</option>
+        <option value="Fever">Fever</option>
+        <option value="Lethargic">Lethargic</option>
+        <option value="Inability to eat">Inability to eat</option>
+        <option value="Weight loss">Weight loss</option>
+        <option value="Vomiting">Vomiting</option>
+        <option value="Dehydration">Dehydration</option>
+        <option value="Shivering">Shivering</option>
+        <option value="Muscle stiffness">Muscle stiffness</option>
+        <option value="Lack of energy/lethargic">Lack of energy/lethargic</option>
+        <option value="Cool body surface">Cool body surface</option>
+        <option value="Sneezing">Sneezing</option>
+        <option value="Nasal congestion">Nasal congestion</option>
+        <option value="Discharge from nose and eyes">Discharge from nose and eyes</option>
+        <option value="Swollen lymph nodes">Swollen lymph nodes</option>
+        <option value="Tiredness">Tiredness</option>
+        <option value="Not eating">Not eating</option>
+        <option value="Squinting">Squinting</option>
+        <option value="Difficulty in beathing">Difficulty in beathing</option>
+        <option value="Loss of appetite">Loss of appetite</option>
+        <option value="Weight loss">Weight loss</option>
+        <option value="Diarrhea">Diarrhea</option>
+        <option value="Seizures">Seizures</option>
+        <option value="Abortion of kittens">Abortion of kittens</option>
+        <option value="Hair loss">Hair loss</option>
+        <option value="Broken and stubbly hair">Broken and stubbly hair</option>
+        <option value="Dandruff">Dandruff</option>
+        <option value="coughing">coughing</option>
+        <option value="decreased activity">decreased activity</option>
+        <option value=""></option>
+      </select>
+    </div>
+
+    <div class="form-group">
+        <label for="disease">Select possible disease for more information..</label>
+        <select id="disease" name="disease" >
+          <option value="">Select</option>
+          <option value="Canine Parvovirus">Canine Parvovirus</option>
+          <option value="Hypothermia">Hypothermia</option>
+          <option value="Feline Upper Respiratory infection">Feline Upper Respiratory infection</option>
+          <option value="Canine distemper">Canine distemper</option>
+          <option value="Feline Leukemia Virus (FeLV)">Feline Leukemia Virus (FeLV)</option>
+          <option value="Lyme Disease">Lyme Disease</option>
+          <option value="Ringworm">Ringworm</option>
+          <option value="Canine Influenza">Canine Influenza</option>
+          <option value="Kennel cough">Kennel cough</option>
+          <option value="Chronic diarrhea">Chronic diarrhea</option>
+          <option value="Heartworm">Heartworm</option>
+        </select>
+      </div>
+    <button type="submit" id="s">Submit</button>
+  </form>
+</div>
+
+            <div class="box site-control">
+                <h2>Result</h2>
+                <textarea name="suggestion" placeholder="Possible symptoms" id="result" cols="30" rows="7"></textarea>
+                <textarea name="suggestion" placeholder="Symptoms of disease" id="result3" cols="30" rows="10"></textarea>
+                <textarea name="suggestion" placeholder="Information to disease" id="result2" cols="30" rows="20"></textarea>
+            </div>
+
+
+            <div class="box">
+                <h1>Daily Tracking:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+                <div class="even-column">
+                    <input type="checkbox" id="draft" value="quick darft" checked>
+                    <label for="draft">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="target" value="yearly target" checked>
+                    <label for="target">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="state" value="tickets statistics" checked>
+                    <label for="state">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="new" value="latest news" checked>
+                    <label for="new">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="task" value="latest tasks">
+                    <label for="task">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="item" value="top search items" checked>
+                    <label for="item">Lorem ipsum dolor sit amet,</label>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Weekly Tracking:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+                <div class="even-column">
+                    <input type="checkbox" id="draft" value="quick darft" checked>
+                    <label for="draft">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="target" value="yearly target" checked>
+                    <label for="target">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="state" value="tickets statistics" checked>
+                    <label for="state">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="new" value="latest news" checked>
+                    <label for="new">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="task" value="latest tasks">
+                    <label for="task">Lorem ipsum dolor sit amet,</label>
+                </div>
+                <div class="even-column">
+                    <input type="checkbox" id="item" value="top search items" checked>
+                    <label for="item">Lorem ipsum dolor sit amet,</label>
+                </div>
+            </div>
+            <div class="box site-control">
+                <h2>Daily Reminders:</h2>
+                <p>Lorem ipsum dolor sit</p>
+                <textarea name="" placeholder="Reminders.." id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </section>
+
+<script>
+
+  document.getElementById('healthSurveyForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var pet = document.getElementById('pet').value;
+    var possibleSymptoms = document.getElementById('symptoms').value;
+    var disease = document.getElementById('disease').value;
+    var disease2 = document.getElementById('disease').value;
+
+
+    var medicine = recommendMedicine(pet, possibleSymptoms);
+    document.getElementById('result').innerHTML = medicine;
+    var diseaseSymptoms = diseaseInformation2(disease);
+    document.getElementById('result3').innerHTML = diseaseSymptoms;
+    var diseaseInfo = diseaseInformation(disease2);
+    document.getElementById('result2').innerHTML = diseaseInfo;
+
+  });
+
+  function diseaseInformation2(disease2){
+    var diseaseSymptoms = "";
+
+        if (disease2 == 'Canine Parvovirus' ) {
+          diseaseSymptoms = 'Fever \nClear nasal discharge \nLack of energy/lethargic \nCoughing \nVomiting  \nDiarrhea \nDifficulty in breathing \nHead tilt \nCircling \nSeizures';
+        }
+
+        if (disease2 == 'Hypothermia' ) {
+          diseaseSymptoms = 'Shivering \nMuscle stiffness \nLack of energy/lethargic \nDifficulty walking \nPale gums \nCool body surface \nHave fixed and dilated pupils';
+        }
+
+        if (disease2 == 'Feline Upper Respiratory infection' ) {
+          diseaseSymptoms = 'Sneezing \nNasal congestion Discharge from nose and eyes \nFever \nSwollen lymph nodes \nTiredness \nNot eating \nSquinting \nDifficulty in beathing';
+        }
+
+        if (disease2 == 'Canine distemper' ) {
+          diseaseSymptoms = 'Fever \nClear nasal discharge \nLack of energy/lethargic \nCoughing \nVomiting \nDiarrhea \nDifficulty in breathing \nHead tilt \nCircling \nSeizures';
+        }
+
+        if (disease2 == 'Feline Leukemia Virus (FeLV)' ) {
+          diseaseSymptoms = 'Loss of appetite \nWeight loss \nFever \nDiarrhea \nSeizures \nAbortion of kittens';
+        }
+
+        if (disease2 == 'Lyme Disease' ) {
+          diseaseSymptoms = 'Fever \nLoss of appetite \nLack of energy/lethargic \nStiffness';
+        }
+
+        if (disease2 == 'Ringworm' ) {
+          diseaseSymptoms = 'Hair Loss \nBroken and Stubbly Hair \nDandruff';
+        }
+
+        if (disease2 == 'Canine Influenza ' ) {
+          diseaseSymptoms = 'Coughing \nDischarge form Nose and Eyes \nSneezing \nFever \nLack of Energy/Lethargic \nLoss of Appetite';
+        }
+
+        if (disease2 == 'Kennel cough' ) {
+          diseaseSymptoms = 'Coughing \nRunny Nose \nSneezing \nLack of Energy/Lethargic \nLoss of Appetite \nLow Fever';
+        }
+
+        if (disease2 == 'Chronic diarrhea' ) {
+          diseaseSymptoms = 'Unusual Drooling \nLack of Appetite \nWeakness \nVomiting';
+        }
+
+        if (disease2 == 'Heartworm' ) {
+          diseaseSymptoms = 'Coughing \nLethargic \nDifficulty Breathing \nDecreased activity';
+        }
+
+
+ return diseaseSymptoms;
+  }
+
+  function diseaseInformation(disease){
+    var diseaseInfo = "";
+
+
+
+        if (disease == 'Canine Parvovirus' ) {
+          diseaseInfo = 'Canine parvovirus is a highly contagious virus that can affect all dogs, but unvaccinated dogs and puppies younger than four months old are the most at risk. Dogs that are ill from canine parvovirus infection are often said to have "parvo." The virus affects dogs gastrointestinal tracts and is spread by direct dog-to-dog contact and contact with contaminated feces (stool), environments, or people. The virus can also contaminate kennel surfaces, food and water bowls, collars and leashes, and the hands and clothing of people who handle infected dogs. It is resistant to heat, cold, humidity, and drying, and can survive in the environment for long periods of time. Even trace amounts of feces from an infected dog may harbor the virus and infect other dogs that come into the infected environment. The virus is readily transmitted from place to place on the hair or feet of dogs or via contaminated cages, shoes, or other objects.';
+        }
+
+        if (disease == 'Canine Parvovirus' ) {
+          medicine = 'Canine parvovirus is a highly contagious virus that can affect all dogs, but unvaccinated dogs and puppies younger than four months old are the most at risk. Dogs that are ill from canine parvovirus infection are often said to have "parvo." The virus affects dogs gastrointestinal tracts and is spread by direct dog-to-dog contact and contact with contaminated feces (stool), environments, or people. The virus can also contaminate kennel surfaces, food and water bowls, collars and leashes, and the hands and clothing of people who handle infected dogs. It is resistant to heat, cold, humidity, and drying, and can survive in the environment for long periods of time. Even trace amounts of feces from an infected dog may harbor the virus and infect other dogs that come into the infected environment. The virus is readily transmitted from place to place on the hair or feet of dogs or via contaminated cages, shoes, or other objects.';
+        }
+        if (disease == 'Hypothermia' ) {
+          diseaseInfo = 'Once the core body temperature of a cat or dog drops below 94°F (34.4°C), their bodies struggle to regulate their temperature. Without treatment, hypothermia affects every organ system and can cause heart problems, difficulty breathing, drops in blood sugar, neurological effects, depressed immune systems, and death. As hypothermia progresses, cold animals will stop shivering or looking for heat, as their bodies can no longer work to stabilize their temperature. This leads to a hypothermic spiral, where they just get colder and colder. As each organ system is affected, you may start to notice related symptoms, like slower pulse and respiratory rates.';
+        }
+        if (disease == 'Feline Upper Respiratory infection' ) {
+          diseaseInfo = "Upper respiratory infections are highly contagious and spread easily, making prevention the first and most important step in avoiding the risks of further complications associated with infection. Depending upon the condition or cause of infection, our experienced veterinary team may recommend vaccinations to prevent exposure and, in cases when vaccinations are not available, help educate you and your family on precautionary measures that may help reduce your pets risk of infection. Feline upper respiratory infection and upper respiratory infection in dogs can spread through discharge of the nose and eyes, as well as direct contact with an infected pet, or indirect contact by way of shared objects like dog bowls, bedding, toys, shoes and environment that have been contaminated by an infected pet. Your pet may become infected at the park, roaming your neighborhood or while visiting any location where other pets have been, including the pet store, hospital or doctor's office or rest stop while traveling. ";
+        }
+        if (disease == 'Canine distemper' ) {
+          diseaseInfo = "Canine distemper is a highly contagious and often fatal disease that can affect dogs.  It is an airborne virus that is also spread through contact with items like clothing, dog brushes, shared food, shared water bowls or other utensils. It can also be passed on via fresh urine or blood. There is no known cure for distemper and young puppies that have not been vaccinated or older dogs who are unvaccinated are more susceptible to contracting the disease.";
+        }
+        if (disease == 'Feline Leukemia Virus (FeLV)' ) {
+          diseaseInfo = "Feline leukemia virus (FeLV) is responsible for the majority of household cat deaths. It affects all breeds, though it is more common in males and typically occurs in felines aged one to six years old. Outdoor cats and cats in multiple-cat environments are considered the most at-risk for contracting FeLV, a virus spread through warm fluids, such as nasal secretions, saliva, urine, or a mother’s milk. It can also be spread from a mother to her kittens while they are still in the womb. Grooming one-another and fighting tend to be the most common ways in which the virus spreads. Because feline leukemia cannot survive outside of a host, ordinary detergents, including bleach, successfully kill the virus on household surfaces. The virus only affects cats and cannot be transmitted to humans, dogs, or any other animal. Through immunosuppression, FeLV impairs the affected cat’s immune system and is capable of causing a variety of diseases such as liver disease and intestinal disease as well as certain types of cancer. Because of their impaired immune system, cats with FeLV are also highly susceptible to various general infections.";
+        }
+        if (disease == 'Lyme Disease' ) {
+          diseaseInfo = "Lyme disease, which is caused by the bacteria Borrelia burgdorferi and transmitted through the bite of a tick, affects domestic animals and humans. At least 4 known species of ticks can transmit Lyme disease. However, the great majority of Lyme disease transmissions are due to the bite of a very tiny tick commonly called the deer tick, or black-legged tick. The scientific name of the tick species involved on the west coast of the US is Ixodes pacificus; Ixodes scapularis is the species involved elsewhere in the United States (primarily the northeast and the Midwest). Lyme disease occurs much more frequently in dogs than in cats. When infected, cats may show lameness, fever, loss of appetite, fatigue, or difficulty breathing. Lyme disease can also affect the kidneys, joints, nervous system, and heart. Many cats do not show noticeable signs, despite being infected.";
+        }
+        if (disease == 'Ringworm' ) {
+          diseaseInfo = "Dermatophytosis (ringworm) is typically a superficial skin infection. It affects a wide range of animals, and several of the causative fungi also cause zoonotic infections. In otherwise healthy animals, it requires no treatment; however, treatment is usually recommended to shorten the course of the disease and avoid contagion. Disease is more common in young or stressed individuals, such as those in extremely crowded environments. Clinical signs can include any combination of hair loss, scaling, crusting, erythema, papules, hyperpigmentation, and variable pruritus. Diagnosis can be confirmed by direct examination of hairs or scales from lesions or by skin biopsy. Dermoscopy or a Wood's lamp can be used to identify hairs for culture and/or direct examination. Fungal culture can determine whether spores are present on the hair coat and must be used in conjunction with clinical examination findings. PCR testing confirms the presence or absence of fungal DNA on the hair coat. It cannot distinguish between viable and nonviable spores. In animals that need treatment, topical antifungal therapy disinfects the hair coat and eliminates infection from hair follicles.";
+        }
+        if (disease == 'Canine Influenza' ) {
+          diseaseInfo = "Canine influenza (also known as dog flu) is a contagious respiratory disease in dogs caused by specific Type A influenza viruses known to infect dogs. These are called “canine influenza viruses.” No human infections with canine influenza have ever been reported. There are two different influenza A dog flu viruses: one is an H3N8 virus and the other is an H3N2 virus. Canine influenza A(H3N2) viruses are different from seasonal influenza A(H3N2) viruses that spread annually in people. Canine influenza H3N8 viruses originated in horses, spread to dogs, and can now spread between dogs. H3N8 equine influenza (horse flu) viruses have been known to exist in horses for more than 40 years. In 2004, cases of an unknown respiratory illness in dogs (initially greyhounds) were reported in the United States. Canine influenza H3N2 viruses originated in birds, spread to dogs, and can now spread between dogs. Transmission of H3N2 canine influenza viruses to cats from infected dogs has been reported also. ";
+        }
+        if (disease == 'Kennel cough' ) {
+          diseaseInfo = "Kennel cough, also known as infectious tracheobronchitis, is an infection of the throat and upper respiratory tract. It’s most commonly recognized in dogs. In dogs, several types of viruses and bacteria can cause kennel cough. The bacteria Bordetella bronchiseptica is most common, so often the terms “kennel cough” and “Bordetella” are often used interchangeably. This is also the infectious agent that causes kennel cough in cats. The bacteria that causes kennel cough is transmitted through nasal and oral secretions (coughing, sneezing, etc.), direct contact, and shared objects such as water bowls or toys. The cats at the highest risk of exposure include kitties in crowded conditions (especially shelters or pet stores, and even more so if hygiene at the facility is not good), cats who live with another pet who has been exposed to kennel cough, and cats who travel, go outdoors, or are frequently exposed to other pets.";
+        }
+        if (disease == 'Chronic diarrhea' ) {
+          diseaseInfo = "Chronic diarrhea is a common problem in dogs and cats. Diagnosis can be difficult and challenging for veterinarians due to the large number of possible causes of chronic diarrhea. Following a logical and thorough diagnostic plan is essential to efficiently arrive at an accurate diagnosis. This seminar will review the author's approach to the diagnosis of chronic diarrhea. Chronic diarrhea can be frustrating for pet parents and uncomfortable for the pet. There are several different ways diarrhea can occur in dogs. It may occur because the body does not absorb nutrients appropriately, the intestines are inflamed, there are increased secretions, the intestinal walls are leaky, or the intestinal muscles are not functioning properly. Diarrhea is often classified into either small intestinal or large intestinal diarrhea. When a dog swallows food, it travels from the mouth down the esophagus to the stomach. From there it enters the small intestine, and finally the large intestine before being passed out as stool.";
+        }
+        if (disease == 'Heartworm' ) {
+          diseaseInfo = "Heartworm disease (dirofilariasis), produced by Dirofilaria immitis, primarily affects the pulmonary arteries, producing inflammation, vascular dysfunction, and pulmonary hypertension. Secondarily, this results in right-side cardiac pressure overload and progressive pulmonary insufficiency. Tertiary problems include aberrant heartworm migration, caval syndrome, coagulopathies (DIC), and heart failure. Most infected dogs are subclinically affected, but the most common clinical signs are weight loss, exercise intolerance, cough, and labored breathing. Prevention, with macrocyclic lactones, is crucial. Clearing a heartworm infection typically requires melarsomine, an organic arsenic compound, administered IM in three injections. Chronic use of certain macrocyclic lactones with doxycycline has also been effective when melarsomine cannot be used or is unavailable.";
+        }
+
+ return diseaseInfo;
+  }
+
+  function recommendMedicine(pet, possibleSymptoms) {
+    var medicine = '';
+
+
+    if (pet == 'dog' && possibleSymptoms == "Fever" ) {
+      medicine = 'Possible disease: \n1) Canine Distemper \n2) Lyme Disease \n3) Canine Influenza \n4) Kennel Cough \n5) Canine Parvovirus';
+    }
+
+    return medicine;
+  }
+
+</script>
+
+</body>
+</html>
